@@ -4,12 +4,12 @@ const skills = [
     {id: 3, skill: 'set world record for fastest .forEach application'},
     {id: 4, skill: 'wishing I knew C#'},
 ];
-
+//NEEDS BOTH .EJS FILE AND CONTROLLER FILE
 function showAll(){
     return skills;
 }
 
-//NEEDS .EJS FILE 
+//NEEDS BOTH .EJS FILE AND CONTROLLER FILE
 function showOne(id){
     return skills[id-1];
 }
