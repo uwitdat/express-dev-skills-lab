@@ -6,6 +6,13 @@ function showAllSkills(req, res){
     });
 }
 
+function showOneSkill(req, res){
+    res.render('skills/showSkill', {
+        skills: Skill.showOne(req.params.id)
+    })
+}
+
 module.exports = {
     showAllSkills,
+    showOneSkill,
 }

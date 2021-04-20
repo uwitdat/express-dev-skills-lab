@@ -9,7 +9,7 @@ function showAll(){
     return skills;
 }
 
-//NEEDS .EJS FILE AND CONTROLLER FUNCTION
+//NEEDS .EJS FILE 
 function showOne(id){
     return skills[id-1];
 }

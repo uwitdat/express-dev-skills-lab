@@ -5,6 +5,7 @@ var skillsCtrl = require('../controllers/skills')
 
 //get skills page
 router.get('/', skillsCtrl.showAllSkills)
+router.get('/:id', skillsCtrl.showOneSkill)
 
 module.exports = router
 
