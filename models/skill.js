@@ -14,7 +14,21 @@ function showOne(id){
     return skills[id-1];
 }
 
+function createNew(skillObj){
+    const newSkill = {
+        id: 5,
+        skill: skillObj.skill,
+      }
+      skills.push(newSkill)
+    }
+
+
+
+
+
+
 module.exports ={
     showAll, 
     showOne,
+    createNew
 }
