@@ -12,12 +12,16 @@
     <ul> 
         <% skills.forEach(function(s){ %>
             <li>
+                <form action='/skills/ <%= s.id %>?_method=DELETE'
+                    class='delete-skill' method="POST">
+                    <button type='submit'>X</button>
+                </form>
                 <a href='/skills/ <%= s.id %>'>
-                <%= s.skill %>
+                    <%= s.skill %>
                 </a>
             </li>
 
-     <%   }); %>
+        <%   }); %>
     </ul>
 
     <a href='/'>Home</a><br>

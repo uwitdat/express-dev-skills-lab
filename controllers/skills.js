@@ -22,11 +22,17 @@ function createNewSkill(req, res){
     res.redirect('skills');
 }
 
+function deleteSkill(req, res){
+    Skill.deleteOne(req.params.id);
+    res.redirect('/skills');
+}
+
 module.exports = {
     showAllSkills,
     showOneSkill,
     getNewSkill,
     createNewSkill,
+    delete: deleteSkill,
 
 
 }

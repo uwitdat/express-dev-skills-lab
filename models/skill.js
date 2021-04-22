@@ -15,16 +15,23 @@ function showOne(id){
 }
 
 function createNew(skillObj){
+    const skillId = skills[skills.length - 1].id + 1
     const newSkill = {
-        id: 5,
+        id: skillId,
         skill: skillObj.skill       
     };
     skills.push(newSkill)
+}
+
+function deleteOne(id){
+    const index = skills.findIndex(skill => skill.id === parseInt(id));
+    skills.splice(index, 1); 
 }
 
 module.exports ={
     showAll, 
     showOne,
     createNew,
+    deleteOne,
 
 }
