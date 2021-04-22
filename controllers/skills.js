@@ -19,12 +19,14 @@ function getNewSkill(req, res){
 
 function createNewSkill(req, res){
     Skill.createNew(req.body);
-    res.redirect('/skills')
+    res.redirect('skills');
 }
+
 module.exports = {
     showAllSkills,
     showOneSkill,
     getNewSkill,
     createNewSkill,
+
 
 }

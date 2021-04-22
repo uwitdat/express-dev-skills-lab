@@ -17,18 +17,14 @@ function showOne(id){
 function createNew(skillObj){
     const newSkill = {
         id: 5,
-        skill: skillObj.skill,
-      }
-      skills.push(newSkill)
-    }
-
-
-
-
-
+        skill: skillObj.skill       
+    };
+    skills.push(newSkill)
+}
 
 module.exports ={
     showAll, 
     showOne,
-    createNew
+    createNew,
+
 }
